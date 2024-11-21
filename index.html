@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+   <div class="wrapper">
+    <div class="left-col">
+        <img src="logo.png" class="logo" >
+        <div class="containt">
+            <h1>Add Plants to you living space</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. At est incidunt neque 
+                
+            </p>
+            <button type="button">LEARN MORE</button>
+
+        </div>
+
+    </div>
+    <div class="right-col">
+        <div class="slider">
+            <img src="pic-1.jpg" id="slid">
+        </div>
+        <div class="slider-con">
+            <h1>Where can I find ideas for small rooms?</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere consectetur, repellat eum <br> possimus iusto eius ipsum minima, amet doloremque cumque obcaecati quae voluptatem <br>error quos culpa nisi necessitatibus odit.
+            </p>
+
+            <div class="controlar">
+                <img src="back.png" id="backbtn" >
+                <div class="vertical-line"></div>
+                <img src="next.png" id="nextbtn">
+
+            </div>
+
+
+        </div>
+
+    </div>
+   </div>
+   
+   <script>
+
+    var slid = document.getElementById("slid");
+    var backbtn = document.getElementById("backbtn");
+    var nextbtn = document.getElementById("nextbtn");
+
+    var images = new Array(
+        "pic-1.jpg",
+        "pic-2.jpg",
+        "pic-3.jpg",
+        "pic-4.jpg"
+        
+    );
+    let i = 0;
+    nextbtn.onclick = function(){
+        if(i < images.length-1){
+            slid.src = images[i+1]
+            i++
+        }
+        
+    }
+    backbtn.onclick = function(){
+        if(i>0){
+            slid.src = images[i-1]
+            i--
+        }
+       
+    }
+
+
+
+   </script>
+
+
+</body>
+</html>
