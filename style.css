@@ -112,7 +112,7 @@ hr{
     background: #b5e3cf;
 }
 
-@media(max-width:800px) {
+@media sceen and (max-width:800px) {
     .logo{
         margin: 30px auto;
     }
