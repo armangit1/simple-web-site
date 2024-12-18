@@ -113,6 +113,9 @@ hr{
 }
 
 @media sceen and (max-width:800px) {
+    .wrapper{
+       flex-direction:column;
+    }
     .logo{
         margin: 30px auto;
     }
